@@ -57,7 +57,4 @@ Dados de teste podem ser adicionados em cypress/fixtures/.
 Gerar relatórios
 Os relatórios dos testes (screenshots, vídeos, relatórios HTML) ficam em cypress/reports/ e pastas relacionadas, conforme configurado no projeto.
 
-Observações
-Certifique-se de que o Cypress está configurado corretamente no arquivo cypress.config.js.
-
 Utilize comandos customizados em cypress/support/ para facilitar a escrita dos testes.
