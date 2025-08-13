@@ -1,9 +1,19 @@
-const { defineConfig } = require('cypress')
+const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  e2e: {
-    baseUrl: 'https://bugbank.netlify.app',
-    specPattern: 'cypress/e2e/**/*.cy.js',
-  },
-})
+  reporter: "mochawesome",
 
+  // ... outras configs
+  reporterOptions: {
+    reportDir: "cypress/reports",
+    overwrite: false,
+    html: true,
+    json: true,
+  },
+
+  e2e: {
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    },
+  },
+});
